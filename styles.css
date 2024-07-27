@@ -1,28 +1,45 @@
-html, body {
-    margin: 0px;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
-    font-weight: 600;
+html,
+body {
+  margin: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, sans-serif;
+  font-weight: 600;
 }
 
 .container {
-    position: relative;
-    display: block;
-    text-align: center;
-    top: 20%;
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 20%;
 }
+
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 @media (prefers-color-scheme: light) {
-    html {
-      background-color: #fff;
-      color: #000;
-    }
+  html {
+    background-color: #fff;
+    color: #000;
   }
-  
-  @media (prefers-color-scheme: dark) {
-    html {
-        background-color: #000;
-        color: #fff;
-    }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #000;
+    color: #fff;
   }
+}
